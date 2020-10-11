@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="start">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="start\res">
+      <UniqueIdentifier>{9e37f181-49bc-4b81-9993-660eeb855647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yolotool">
+      <UniqueIdentifier>{d3a0a8a3-a978-4578-825a-602bd01bc50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4086e521-c1c8-4c70-abf1-3cd44fa50061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{fa5f12b3-bf96-45eb-a49d-6a49041170c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\cuda">
+      <UniqueIdentifier>{69edc7dd-270e-4490-9e16-191c354e6c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib">
+      <UniqueIdentifier>{9a93f3f8-0a72-4d3f-b5be-d3c8ada181e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main">
+      <UniqueIdentifier>{1d52d0f2-d1a7-4d0d-96f0-7a8986cd5ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\layer">
+      <UniqueIdentifier>{ccfcd3e6-7ec3-4efc-bc47-7ea8cf8ea867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib\img">
+      <UniqueIdentifier>{0b19852d-e8cd-4e0c-ae4e-cd4dc5276a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib\def">
+      <UniqueIdentifier>{4c3c5a6e-7923-4279-b8e6-da5c0e7fec08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib\coon">
+      <UniqueIdentifier>{6f41caa4-279c-4f81-bd8a-7396bc3e8a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\c">
+      <UniqueIdentifier>{137de8d0-fdd8-45bd-a98c-ee62ef7497f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\c\lib">
+      <UniqueIdentifier>{5c127081-bd68-459e-b89d-8363024fafe0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\RES\resyolo.h">
+      <Filter>start\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\darknet.h">
+      <Filter>src\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolo_console_dll.h">
+      <Filter>src\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolo_mark.h">
+      <Filter>yolotool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolo_v2_class.h">
+      <Filter>src\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\targetver.h">
+      <Filter>start</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\stdafx.h">
+      <Filter>start</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\activation_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\batchnorm_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\connected_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\conv_lstm_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\crnn_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolo_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\upsample_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\softmax_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\shortcut_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\route_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\rnn_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\reorg_old_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\reorg_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\region_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\normalization_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\local_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\lstm_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\detection_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolo_intface.h">
+      <Filter>start</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\http_stream.h">
+      <Filter>src\lib\img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\image.h">
+      <Filter>src\lib\img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\image_opencv.h">
+      <Filter>src\lib\img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\gru_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\activations.h">
+      <Filter>src\core\cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\blas.h">
+      <Filter>src\core\cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\col2im.h">
+      <Filter>src\core\cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\im2col.h">
+      <Filter>src\core\cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\cost_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\demo.h">
+      <Filter>src\core\c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\classifier.h">
+      <Filter>src\core\c\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\parser.h">
+      <Filter>src\core\c\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\stb_image_write.h">
+      <Filter>src\lib\img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\stb_image.h">
+      <Filter>src\lib\img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\yolodef.h">
+      <Filter>src\lib\def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\version.h">
+      <Filter>src\lib\def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\data.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\option_list.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\getopt.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\gettimeofday.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\list.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\box.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\darkunistd.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\gemm.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\tree.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\utils.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\matrix.h">
+      <Filter>src\lib\coon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\network.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\avgpool_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\convolutional_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\crop_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\deconvolutional_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\dropout_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\maxpool_layer.h">
+      <Filter>src\core\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\YoloGPU\src\test.h">
+      <Filter>src\main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_console_dll.cpp">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_v2_class.cpp">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\darknet.c">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_mark.cpp">
+      <Filter>yolotool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\YoloCPU.cpp">
+      <Filter>start</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\stdafx.cpp">
+      <Filter>start</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\activation_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\batchnorm_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\connected_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\conv_lstm_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\crnn_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\upsample_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\softmax_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\shortcut_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\route_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\rnn_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\reorg_old_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\reorg_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\region_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\normalization_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\local_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\lstm_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\detection_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_intface.cpp">
+      <Filter>start</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\http_stream.cpp">
+      <Filter>src\lib\img</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\image.c">
+      <Filter>src\lib\img</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\image_opencv.cpp">
+      <Filter>src\lib\img</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\gru_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\activations.c">
+      <Filter>src\core\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\blas.c">
+      <Filter>src\core\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\col2im.c">
+      <Filter>src\core\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\im2col.c">
+      <Filter>src\core\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\cost_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo_fast.cpp">
+      <Filter>yolotool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\demo.c">
+      <Filter>src\core\c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\detector.c">
+      <Filter>src\core\c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\art.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\captcha.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\cifar.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\classifier.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\coco.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\compare.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\cpu_gemm.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\dice.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\go.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\nightmare.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\parser.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\data.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\getopt.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\gettimeofday.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\list.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\option_list.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\box.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\gemm.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\tree.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\utils.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\matrix.c">
+      <Filter>src\lib\coon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\network.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\avgpool_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\convolutional_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\crop_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\deconvolutional_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\dropout_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\maxpool_layer.c">
+      <Filter>src\core\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\rnn.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\rnn_vid.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\super.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\swag.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\tag.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\voxel.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\writing.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\yolo.c">
+      <Filter>src\core\c\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\YoloGPU\src\test.c">
+      <Filter>src\main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\RES\icon.ico">
+      <Filter>start\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\YoloCPU.rc">
+      <Filter>start\res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\YoloGPU\src\activation_kernels.cu">
+      <Filter>src\core\cuda</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\blas_kernels.cu">
+      <Filter>src\core\cuda</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\col2im_kernels.cu">
+      <Filter>src\core\cuda</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\im2col_kernels.cu">
+      <Filter>src\core\cuda</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\version.h.in">
+      <Filter>src\lib\def</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\network_kernels.cu">
+      <Filter>src\core</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\avgpool_layer_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\convolutional_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\crop_layer_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\deconvolutional_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\dropout_layer_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+    <None Include="..\..\YoloGPU\src\maxpool_layer_kernels.cu">
+      <Filter>src\core\layer</Filter>
+    </None>
+  </ItemGroup>
+</Project>

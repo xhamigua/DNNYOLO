@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DLL_Debug|Win32">
+      <Configuration>DLL_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Debug|x64">
+      <Configuration>DLL_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release|Win32">
+      <Configuration>DLL_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release|x64">
+      <Configuration>DLL_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Debug|Win32">
+      <Configuration>EXE_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Debug|x64">
+      <Configuration>EXE_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Release|Win32">
+      <Configuration>EXE_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Release|x64">
+      <Configuration>EXE_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STATIC_Debug|Win32">
+      <Configuration>STATIC_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STATIC_Debug|x64">
+      <Configuration>STATIC_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STATIC_Release|Win32">
+      <Configuration>STATIC_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STATIC_Release|x64">
+      <Configuration>STATIC_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B2A79CB-7986-4411-BFDE-6DB86ADED295}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SQC</RootNamespace>
+    <ProjectName>YoloCPU</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <TargetExt>.so</TargetExt>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <TargetExt>.so</TargetExt>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <TargetExt>.so</TargetExt>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\opencv3\include;$(SolutionDir)project\YoloGPU\src;$(IncludePath)</IncludePath>
+    <TargetExt>.so</TargetExt>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)project\YoloGPU\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <WarningLevel>Level4</WarningLevel>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV1;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <WarningLevel>Level4</WarningLevel>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <HeapReserveSize>
+      </HeapReserveSize>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCV1;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENCV1;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <HeapReserveSize>
+      </HeapReserveSize>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STATIC_Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENCV;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENCV1;LIB_EXPORTS;PTW32_STATIC_LIB;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\YoloGPU\src\activations.h" />
+    <ClInclude Include="..\..\YoloGPU\src\activation_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\avgpool_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\batchnorm_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\blas.h" />
+    <ClInclude Include="..\..\YoloGPU\src\box.h" />
+    <ClInclude Include="..\..\YoloGPU\src\classifier.h" />
+    <ClInclude Include="..\..\YoloGPU\src\col2im.h" />
+    <ClInclude Include="..\..\YoloGPU\src\connected_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\convolutional_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\conv_lstm_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\cost_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\crnn_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\crop_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\darknet.h" />
+    <ClInclude Include="..\..\YoloGPU\src\darkunistd.h" />
+    <ClInclude Include="..\..\YoloGPU\src\data.h" />
+    <ClInclude Include="..\..\YoloGPU\src\deconvolutional_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\demo.h" />
+    <ClInclude Include="..\..\YoloGPU\src\detection_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\dropout_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\gemm.h" />
+    <ClInclude Include="..\..\YoloGPU\src\getopt.h" />
+    <ClInclude Include="..\..\YoloGPU\src\gettimeofday.h" />
+    <ClInclude Include="..\..\YoloGPU\src\gru_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\http_stream.h" />
+    <ClInclude Include="..\..\YoloGPU\src\im2col.h" />
+    <ClInclude Include="..\..\YoloGPU\src\image.h" />
+    <ClInclude Include="..\..\YoloGPU\src\image_opencv.h" />
+    <ClInclude Include="..\..\YoloGPU\src\layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\list.h" />
+    <ClInclude Include="..\..\YoloGPU\src\local_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\lstm_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\matrix.h" />
+    <ClInclude Include="..\..\YoloGPU\src\maxpool_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\network.h" />
+    <ClInclude Include="..\..\YoloGPU\src\normalization_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\option_list.h" />
+    <ClInclude Include="..\..\YoloGPU\src\parser.h" />
+    <ClInclude Include="..\..\YoloGPU\src\region_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\reorg_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\reorg_old_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\rnn_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\route_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\shortcut_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\softmax_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\stb_image.h" />
+    <ClInclude Include="..\..\YoloGPU\src\stb_image_write.h" />
+    <ClInclude Include="..\..\YoloGPU\src\stdafx.h" />
+    <ClInclude Include="..\..\YoloGPU\src\targetver.h" />
+    <ClInclude Include="..\..\YoloGPU\src\test.h" />
+    <ClInclude Include="..\..\YoloGPU\src\tree.h" />
+    <ClInclude Include="..\..\YoloGPU\src\upsample_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\utils.h" />
+    <ClInclude Include="..\..\YoloGPU\src\version.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolodef.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolo_console_dll.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolo_intface.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolo_layer.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolo_mark.h" />
+    <ClInclude Include="..\..\YoloGPU\src\yolo_v2_class.h" />
+    <ClInclude Include="..\RES\resyolo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\YoloGPU\src\activations.c" />
+    <ClCompile Include="..\..\YoloGPU\src\activation_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\art.c" />
+    <ClCompile Include="..\..\YoloGPU\src\avgpool_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\batchnorm_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\blas.c" />
+    <ClCompile Include="..\..\YoloGPU\src\box.c" />
+    <ClCompile Include="..\..\YoloGPU\src\captcha.c" />
+    <ClCompile Include="..\..\YoloGPU\src\cifar.c" />
+    <ClCompile Include="..\..\YoloGPU\src\classifier.c" />
+    <ClCompile Include="..\..\YoloGPU\src\coco.c" />
+    <ClCompile Include="..\..\YoloGPU\src\col2im.c" />
+    <ClCompile Include="..\..\YoloGPU\src\compare.c" />
+    <ClCompile Include="..\..\YoloGPU\src\connected_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\convolutional_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\conv_lstm_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\cost_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\cpu_gemm.c" />
+    <ClCompile Include="..\..\YoloGPU\src\crnn_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\crop_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\darknet.c" />
+    <ClCompile Include="..\..\YoloGPU\src\data.c" />
+    <ClCompile Include="..\..\YoloGPU\src\deconvolutional_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\demo.c" />
+    <ClCompile Include="..\..\YoloGPU\src\detection_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\detector.c" />
+    <ClCompile Include="..\..\YoloGPU\src\dice.c" />
+    <ClCompile Include="..\..\YoloGPU\src\dropout_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\gemm.c" />
+    <ClCompile Include="..\..\YoloGPU\src\getopt.c" />
+    <ClCompile Include="..\..\YoloGPU\src\gettimeofday.c" />
+    <ClCompile Include="..\..\YoloGPU\src\go.c" />
+    <ClCompile Include="..\..\YoloGPU\src\gru_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\http_stream.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\im2col.c" />
+    <ClCompile Include="..\..\YoloGPU\src\image.c" />
+    <ClCompile Include="..\..\YoloGPU\src\image_opencv.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\list.c" />
+    <ClCompile Include="..\..\YoloGPU\src\local_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\lstm_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\matrix.c" />
+    <ClCompile Include="..\..\YoloGPU\src\maxpool_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\network.c" />
+    <ClCompile Include="..\..\YoloGPU\src\nightmare.c" />
+    <ClCompile Include="..\..\YoloGPU\src\normalization_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\option_list.c" />
+    <ClCompile Include="..\..\YoloGPU\src\parser.c" />
+    <ClCompile Include="..\..\YoloGPU\src\region_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\reorg_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\reorg_old_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\rnn.c" />
+    <ClCompile Include="..\..\YoloGPU\src\rnn_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\rnn_vid.c" />
+    <ClCompile Include="..\..\YoloGPU\src\route_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\shortcut_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\softmax_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\stdafx.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\super.c" />
+    <ClCompile Include="..\..\YoloGPU\src\swag.c" />
+    <ClCompile Include="..\..\YoloGPU\src\tag.c" />
+    <ClCompile Include="..\..\YoloGPU\src\test.c" />
+    <ClCompile Include="..\..\YoloGPU\src\tree.c" />
+    <ClCompile Include="..\..\YoloGPU\src\upsample_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\utils.c" />
+    <ClCompile Include="..\..\YoloGPU\src\voxel.c" />
+    <ClCompile Include="..\..\YoloGPU\src\writing.c" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo.c" />
+    <ClCompile Include="..\..\YoloGPU\src\YoloCPU.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_console_dll.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_fast.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_intface.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_layer.c" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_mark.cpp" />
+    <ClCompile Include="..\..\YoloGPU\src\yolo_v2_class.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\RES\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\YoloCPU.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\YoloGPU\src\activation_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\avgpool_layer_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\blas_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\col2im_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\convolutional_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\crop_layer_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\deconvolutional_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\dropout_layer_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\im2col_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\maxpool_layer_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\network_kernels.cu" />
+    <None Include="..\..\YoloGPU\src\version.h.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

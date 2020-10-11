@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DLL_Debug|Win32">
+      <Configuration>DLL_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Debug|x64">
+      <Configuration>DLL_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release|Win32">
+      <Configuration>DLL_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release|x64">
+      <Configuration>DLL_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Debug|Win32">
+      <Configuration>EXE_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Debug|x64">
+      <Configuration>EXE_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Release|Win32">
+      <Configuration>EXE_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EXE_Release|x64">
+      <Configuration>EXE_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\src\activation_kernels.cu">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\avgpool_layer_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\blas_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\col2im_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\convolutional_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\crop_layer_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\deconvolutional_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\dropout_layer_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\im2col_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\maxpool_layer_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="..\src\network_kernels.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\activations.c" />
+    <ClCompile Include="..\src\activation_layer.c" />
+    <ClCompile Include="..\src\art.c" />
+    <ClCompile Include="..\src\avgpool_layer.c" />
+    <ClCompile Include="..\src\batchnorm_layer.c" />
+    <ClCompile Include="..\src\blas.c" />
+    <ClCompile Include="..\src\box.c" />
+    <ClCompile Include="..\src\captcha.c" />
+    <ClCompile Include="..\src\cifar.c" />
+    <ClCompile Include="..\src\classifier.c" />
+    <ClCompile Include="..\src\coco.c" />
+    <ClCompile Include="..\src\col2im.c" />
+    <ClCompile Include="..\src\compare.c" />
+    <ClCompile Include="..\src\connected_layer.c" />
+    <ClCompile Include="..\src\convolutional_layer.c" />
+    <ClCompile Include="..\src\conv_lstm_layer.c" />
+    <ClCompile Include="..\src\cost_layer.c" />
+    <ClCompile Include="..\src\cpu_gemm.c" />
+    <ClCompile Include="..\src\crnn_layer.c" />
+    <ClCompile Include="..\src\crop_layer.c" />
+    <ClCompile Include="..\src\darknet.c" />
+    <ClCompile Include="..\src\data.c" />
+    <ClCompile Include="..\src\deconvolutional_layer.c" />
+    <ClCompile Include="..\src\demo.c" />
+    <ClCompile Include="..\src\detection_layer.c" />
+    <ClCompile Include="..\src\detector.c" />
+    <ClCompile Include="..\src\dice.c" />
+    <ClCompile Include="..\src\dropout_layer.c" />
+    <ClCompile Include="..\src\gemm.c" />
+    <ClCompile Include="..\src\getopt.c" />
+    <ClCompile Include="..\src\gettimeofday.c" />
+    <ClCompile Include="..\src\go.c" />
+    <ClCompile Include="..\src\gru_layer.c" />
+    <ClCompile Include="..\src\http_stream.cpp" />
+    <ClCompile Include="..\src\im2col.c" />
+    <ClCompile Include="..\src\image.c" />
+    <ClCompile Include="..\src\image_opencv.cpp" />
+    <ClCompile Include="..\src\layer.c" />
+    <ClCompile Include="..\src\list.c" />
+    <ClCompile Include="..\src\local_layer.c" />
+    <ClCompile Include="..\src\lstm_layer.c" />
+    <ClCompile Include="..\src\matrix.c" />
+    <ClCompile Include="..\src\maxpool_layer.c" />
+    <ClCompile Include="..\src\network.c" />
+    <ClCompile Include="..\src\nightmare.c" />
+    <ClCompile Include="..\src\normalization_layer.c" />
+    <ClCompile Include="..\src\option_list.c" />
+    <ClCompile Include="..\src\parser.c" />
+    <ClCompile Include="..\src\region_layer.c" />
+    <ClCompile Include="..\src\reorg_layer.c" />
+    <ClCompile Include="..\src\reorg_old_layer.c" />
+    <ClCompile Include="..\src\rnn.c" />
+    <ClCompile Include="..\src\rnn_layer.c" />
+    <ClCompile Include="..\src\rnn_vid.c" />
+    <ClCompile Include="..\src\route_layer.c" />
+    <ClCompile Include="..\src\shortcut_layer.c" />
+    <ClCompile Include="..\src\softmax_layer.c" />
+    <ClCompile Include="..\src\stdafx.cpp" />
+    <ClCompile Include="..\src\super.c" />
+    <ClCompile Include="..\src\swag.c" />
+    <ClCompile Include="..\src\tag.c" />
+    <ClCompile Include="..\src\test.c" />
+    <ClCompile Include="..\src\tree.c" />
+    <ClCompile Include="..\src\upsample_layer.c" />
+    <ClCompile Include="..\src\utils.c" />
+    <ClCompile Include="..\src\voxel.c" />
+    <ClCompile Include="..\src\writing.c" />
+    <ClCompile Include="..\src\yolo.c" />
+    <ClCompile Include="..\src\YoloCPU.cpp" />
+    <ClCompile Include="..\src\yolo_console_dll.cpp" />
+    <ClCompile Include="..\src\yolo_fast.cpp" />
+    <ClCompile Include="..\src\yolo_intface.cpp" />
+    <ClCompile Include="..\src\yolo_layer.c" />
+    <ClCompile Include="..\src\yolo_mark.cpp" />
+    <ClCompile Include="..\src\yolo_v2_class.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\res\resyolo.h" />
+    <ClInclude Include="..\src\activations.h" />
+    <ClInclude Include="..\src\activation_layer.h" />
+    <ClInclude Include="..\src\avgpool_layer.h" />
+    <ClInclude Include="..\src\batchnorm_layer.h" />
+    <ClInclude Include="..\src\blas.h" />
+    <ClInclude Include="..\src\box.h" />
+    <ClInclude Include="..\src\classifier.h" />
+    <ClInclude Include="..\src\col2im.h" />
+    <ClInclude Include="..\src\connected_layer.h" />
+    <ClInclude Include="..\src\convolutional_layer.h" />
+    <ClInclude Include="..\src\conv_lstm_layer.h" />
+    <ClInclude Include="..\src\cost_layer.h" />
+    <ClInclude Include="..\src\crnn_layer.h" />
+    <ClInclude Include="..\src\crop_layer.h" />
+    <ClInclude Include="..\src\darknet.h" />
+    <ClInclude Include="..\src\darkunistd.h" />
+    <ClInclude Include="..\src\data.h" />
+    <ClInclude Include="..\src\deconvolutional_layer.h" />
+    <ClInclude Include="..\src\demo.h" />
+    <ClInclude Include="..\src\detection_layer.h" />
+    <ClInclude Include="..\src\dropout_layer.h" />
+    <ClInclude Include="..\src\gemm.h" />
+    <ClInclude Include="..\src\getopt.h" />
+    <ClInclude Include="..\src\gettimeofday.h" />
+    <ClInclude Include="..\src\gru_layer.h" />
+    <ClInclude Include="..\src\http_stream.h" />
+    <ClInclude Include="..\src\im2col.h" />
+    <ClInclude Include="..\src\image.h" />
+    <ClInclude Include="..\src\image_opencv.h" />
+    <ClInclude Include="..\src\layer.h" />
+    <ClInclude Include="..\src\list.h" />
+    <ClInclude Include="..\src\local_layer.h" />
+    <ClInclude Include="..\src\lstm_layer.h" />
+    <ClInclude Include="..\src\matrix.h" />
+    <ClInclude Include="..\src\maxpool_layer.h" />
+    <ClInclude Include="..\src\network.h" />
+    <ClInclude Include="..\src\normalization_layer.h" />
+    <ClInclude Include="..\src\option_list.h" />
+    <ClInclude Include="..\src\parser.h" />
+    <ClInclude Include="..\src\region_layer.h" />
+    <ClInclude Include="..\src\reorg_layer.h" />
+    <ClInclude Include="..\src\reorg_old_layer.h" />
+    <ClInclude Include="..\src\rnn_layer.h" />
+    <ClInclude Include="..\src\route_layer.h" />
+    <ClInclude Include="..\src\shortcut_layer.h" />
+    <ClInclude Include="..\src\softmax_layer.h" />
+    <ClInclude Include="..\src\stb_image.h" />
+    <ClInclude Include="..\src\stb_image_write.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\targetver.h" />
+    <ClInclude Include="..\src\test.h" />
+    <ClInclude Include="..\src\tree.h" />
+    <ClInclude Include="..\src\upsample_layer.h" />
+    <ClInclude Include="..\src\utils.h" />
+    <ClInclude Include="..\src\version.h" />
+    <ClInclude Include="..\src\yolodef.h" />
+    <ClInclude Include="..\src\yolo_console_dll.h" />
+    <ClInclude Include="..\src\yolo_detect.h" />
+    <ClInclude Include="..\src\yolo_intface.h" />
+    <ClInclude Include="..\src\yolo_layer.h" />
+    <ClInclude Include="..\src\yolo_mark.h" />
+    <ClInclude Include="..\src\yolo_v2_class.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\YoloGPU.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\version.h.in" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63184F11-3EE5-46DE-9041-E9D0A58BD06D}</ProjectGuid>
+    <RootNamespace>darknet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>YoloGPU</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\projectconf\CppConf\CppRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.so</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.so</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.so</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <IncludePath>$(LIB3RD_PATH)\pthread\include;$(LIB3RD_PATH)\opencv\OpenCV3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIB3RD_PATH)\pthread\vc15$(PlatformTarget);$(LIB3RD_PATH)\opencv\OpenCV3\vc15$(PlatformTarget);$(LIB3RD_PATH)\libffmpeg\$(PlatformTarget);$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.so</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>OPENCV;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRTDBG_MAP_ALLOC;_CRT_RAND_S;WIN32;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link />
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>OPENCV1;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRTDBG_MAP_ALLOC;_CRT_RAND_S;WIN32;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link />
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV;GPU;CUDNN;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRTDBG_MAP_ALLOC;WIN32;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>stdlib.h;crtdbg.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30;compute_52,sm_52</CodeGeneration>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Warning>W0</Warning>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV1;GPU;CUDNN;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRTDBG_MAP_ALLOC;_CRT_RAND_S;WIN32;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>stdlib.h;crtdbg.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30;compute_52,sm_52</CodeGeneration>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Warning>W0</Warning>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|Win32'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV1;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UndefinePreprocessorDefinitions>CUDNN</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EXE_Release|x64'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV;GPU;CUDNN;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <PrecompiledHeaderCompileAs>CompileAsCpp</PrecompiledHeaderCompileAs>
+      <CompileAs>Default</CompileAs>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30;compute_52,sm_52</CodeGeneration>
+      <Warning>W0</Warning>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV1;GPU;CUDNN;PTW32_STATIC_LIB;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <PrecompiledHeaderCompileAs>CompileAsCpp</PrecompiledHeaderCompileAs>
+      <CompileAs>Default</CompileAs>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30;compute_52,sm_52</CodeGeneration>
+      <Warning>W0</Warning>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.targets" />
+  </ImportGroup>
+</Project>
