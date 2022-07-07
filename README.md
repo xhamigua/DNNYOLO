@@ -12,7 +12,7 @@ AGANPlayer存放各视觉相关的工程，注意代码可能不是最新但会�
 在根目录里我写好了脚本可以参考类似predict_digger.cmd 里面的命令。
 
 ### darknet整合好后，开始训练起来
-![Image text](IMG/darknet_lotus.png)
+![Image text](https://raw.githubusercontent.com/xhamigua/DNNYOLO/master/IMG/darknet_lotus.png)
 
 
 
